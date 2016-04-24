@@ -24,6 +24,7 @@ article {
 a {
 	text-decoration: none;
 }
+
 .middle {
 	background: rgba(79, 79, 79, .66);
 	margin-top: 32px;
@@ -33,6 +34,10 @@ a {
 
 .current {
 	background-color: #005E91;
+}
+
+.center {
+	text-align: center;
 }
 
 #nav_bar {
