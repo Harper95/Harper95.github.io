@@ -11,28 +11,35 @@
 
 <body>
 	<header>
-		<h1> Scratch and Swift </h1>
+		<h1 id="title"> Scratch and Swift </h1>
 	</header>
 
-	<nav>
-		<ul id="nav_bar">
-			<li><a href="index.html"> Home </a></li>
-			<li><a href="projects.html"> Projects </a></li>
-			<li class="current"><a href="blog.html"> Blog </a></li>
-			<li><a href="contact.html"> Contact </a></li>
-			<li><a href="setup.html"> Setup </a></li>
-		</ul>
+	<nav id="nav_bar">
+		<table>
+			<tr>
+				<th><a href="index.html"><img src="home.png"></a></th>
+				<th><a href="projects.html"><img src="folder.png"></a></th>
+				<th><a href="blog.html"><img src="rss.png" id="current"></a></th>
+				<th><a href="contact.html"><img src="contact.png"></a></th>
+			</tr>
+			<tr>
+				<td> Home </td>
+				<td> Projects </td>
+				<td> Blog </td>
+				<td> Contact </td>
+			</tr>
+		</table>
 	</nav>
 
-	<nav>
-		<ul id="left_nav">
-			<li> Post Archive </li>
+	<nav id="quick_nav">
+		<h2> Post Archive </h2>
+		<ul>
 			<li><a href="#why"> Why I Became a Developer </a></li>
 			<li><a href="#bootcamp"> Bootcamps </a></li>
 		</ul>
 	</nav>
 	
-	<div class="middle">
+	<div id="blog">
 		<article id="why">
 			<h3> Why I Became a Developer </h3>
 			<p>

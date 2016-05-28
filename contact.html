@@ -14,27 +14,57 @@
 
 <body>
 	<header>
-		<h1> Contact </h1>
+		<h1 id="title"> Contact </h1>
 	</header>
 
-	<nav>
-		<ul id="nav_bar">
-			<li><a href="index.html"> Home </a></li>
-			<li><a href="projects.html"> Projects </a></li>
-			<li><a href="blog.html"> Blog </a></li>
-			<li class="current"><a href="contact.html"> Contact </a></li>
-			<li><a href="setup.html"> Setup </a></li>
-		</ul>
-	</nav>
-	<div class="middle">
+	<div class="main">
+		<p> Call (805) 400-7131 </p>
+		<p> Follow Us on Social Media </p>
 		<a class="twitter-follow-button" href="https://twitter.com/neverEvil_apps" data-show-count="false" data-size="large"> Follow @neverEvil_apps </a> </br>
-		<a class="github-button" href="https://github.com/Harper95" data-style="mega" aria-label="Follow @Harper95 on GitHub"> Follow @Harper95 </a>		
+		<a class="github-button" href="https://github.com/Harper95" data-style="mega" aria-label="Follow @Harper95 on GitHub"> Follow @Harper95 </a>
+		<div id="page-wrapper">
+			<h1 id="email_header"> Email Us </h1>
+	  		<div id="form-messages"></div>
+			<form id="ajax-contact" method="post" action="mailer.php">
+				<div class="field">
+					<label class="field_label" for="name">Name:</label>
+					<input class="field_input" type="text" id="name" name="name" required>
+				</div>
+				<div class="field">
+					<label class="field_label" for="email">Email:</label>
+					<input class="field_input" type="email" id="email" name="email" required>
+				</div>
+				<div class="field">
+					<label class="field_label" for="message">Message:</label>
+					<textarea class="field_textarea" id="message" name="message" required></textarea>
+				</div>
+				<div class="field">
+					<button id="submit_button" type="submit">Send</button>
+				</div>
+			</form>
+		</div>	
 	</div>
 
+	<nav id="nav_bar">
+		<table>
+			<tr>
+				<th><a href="index.html"><img src="home.png"></a></th>
+				<th><a href="projects.html"><img src="folder.png"></a></th>
+				<th><a href="blog.html"><img src="rss.png"></a></th>
+				<th><a href="contact.html"><img src="contact.png" id="current"></a></th>
+			</tr>
+			<tr>
+				<td> Home </td>
+				<td> Projects </td>
+				<td> Blog </td>
+				<td> Contact </td>
+			</tr>
+		</table>
+	</nav>
+
+	<script src="jquery-2.1.0.min.js"></script>
+	<script src="contact_form.js"></script>
+
 </body>
-
-<footer>
-
-</footer>
 
 </html>
